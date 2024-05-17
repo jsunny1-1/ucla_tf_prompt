@@ -11,7 +11,3 @@ locals {
     storage_account  = lower(replace("sa${var.base_name}", "-", ""))
   }
 }
-
-output "resource_name" {
-  value = local.resource_name[var.resource_type]
-}
